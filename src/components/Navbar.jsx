@@ -18,7 +18,7 @@ export default function Navbar() {
         />
 
         {/* Desktop Menu */}
-        <ul className="hidden md:flex gap-10 text-gray-300 font-medium uppercase tracking-wide">
+        <ul className="hidden md:flex gap-12 text-gray-300 font-semibold uppercase tracking-wider text-lg">
           <li><Link to="/" className="hover:text-yellow-400 transition">Home</Link></li>
           <li><Link to="/about" className="hover:text-yellow-400 transition">About</Link></li>
           <li><Link to="/services" className="hover:text-yellow-400 transition">Services</Link></li>
@@ -54,7 +54,7 @@ export default function Navbar() {
               animate={{ x: 0 }}
               exit={{ x: "100%" }}
               transition={{ type: "spring", stiffness: 70, damping: 20 }}
-              className="fixed top-0 right-0 h-screen w-3/4 sm:w-1/2 bg-gradient-to-b from-black via-neutral-900 to-black border-l border-yellow-500/30 flex flex-col justify-center items-center gap-8 z-50 text-gray-200 text-lg font-medium shadow-[0_0_30px_rgba(255,215,0,0.3)]"
+              className="fixed top-0 right-0 h-screen w-3/4 sm:w-1/2 bg-gradient-to-b from-black via-neutral-900 to-black border-l border-yellow-500/30 flex flex-col justify-center items-center gap-10 z-50 text-gray-200 text-xl font-semibold uppercase tracking-widest shadow-[0_0_30px_rgba(255,215,0,0.3)]"
             >
               {/* Close Button */}
               <button

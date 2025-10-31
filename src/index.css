@@ -1,11 +1,28 @@
 @import "tailwindcss";
-@keyframes gradientMove {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+@import "tailwindcss";
+
+/* ✨ Metallic Shine Animation ✨ */
+@keyframes shineEffect {
+  0% {
+    background-position: -200% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
 }
 
-.animate-gradient {
-  background-size: 200% 200%;
-  animation: gradientMove 4s ease infinite;
+.text-shine {
+  background: linear-gradient(
+    120deg,
+    #b8b8b8 0%,
+    #dcdcdc 25%,
+    #ffffff 50%,
+    #dcdcdc 75%,
+    #b8b8b8 100%
+  );
+  background-size: 200% auto;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: shineEffect 3s linear infinite;
 }
