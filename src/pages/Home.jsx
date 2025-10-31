@@ -40,7 +40,7 @@ export default function Home() {
 
       {/* Tagline */}
       <motion.p
-        className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-amber-300 to-yellow-500 text-sm sm:text-md mt-3 font-semibold tracking-wide"
+        className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-amber-300 to-yellow-500 text-sm sm:text-sm mt-6 font-semibold tracking-wide"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.2, duration: 1 }}
